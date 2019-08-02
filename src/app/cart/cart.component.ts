@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { CartService } from '../cart.service';
 
 @Component({
@@ -8,7 +9,27 @@ import { CartService } from '../cart.service';
 })
 export class CartComponent {
   items = [];
-  constructor(private cartService: CartService) { 
+  checkoutForm: FormGroup;
+  
+  private controlsConfig = {
+    name: '',
+    address: ''
+  };
+
+  constructor(
+    private cartService: CartService,
+    private formBuilder: FormBuilder
+  ) { 
     this.items = this.cartService.getItems();
+    this.checkoutForm = this.formBuilder.group({
+      name: '',
+      address: ''
+    });
+  }
+
+  onSubmit(formData:{k:string, v:any}) {
+    this.cartService.placeOrder(formData);
+    this.checkoutForm.reset();
+    this.items = [];
   }
 }
