@@ -23,6 +23,6 @@ export class CartService {
   }
 
   getShippingPrices() {
-    return this.http.get('/assets/shipping_costs.json');
+    return this.http.get('/assets/data/shipping_costs.json');
   }
 }
