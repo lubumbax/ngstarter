@@ -15,9 +15,17 @@ a {
     background-color: #1976d2;
     color: white;
     border: none;
+    margin: 2px;
 }
 
 .fancy-button {
     background-color: white;
     color: #1976d2;
+}
+
+.in-page-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }

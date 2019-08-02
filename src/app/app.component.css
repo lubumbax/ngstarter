@@ -32,6 +32,14 @@ h3 {
 
 p {
     font-size: 14px;
+    font-family: Lato;
+}
+
+.in-page-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* Inlines */
@@ -40,10 +48,6 @@ a {
     cursor: pointer;
     color: #1976d2;
     text-decoration: none;
-}
-
-p {
-    font-family: Lato;
 }
 
 /* Custom components */
