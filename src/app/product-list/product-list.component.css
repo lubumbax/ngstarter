@@ -1,31 +1,4 @@
-
-a {
-    cursor: pointer;
-    color: #1976d2;
-    text-decoration: none;
-}
-
-.button, button {
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 16px;
-    border-radius: 2px;
-    font-size: 14px;
-    cursor: pointer;
-    background-color: #1976d2;
-    color: white;
-    border: none;
-    margin: 2px;
-}
-
 .fancy-button {
     background-color: white;
     color: #1976d2;
-}
-
-.in-page-toolbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
 }
