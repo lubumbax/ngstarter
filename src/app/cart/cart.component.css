@@ -1,3 +1,9 @@
+a {
+    cursor: pointer;
+    color: #1976d2;
+    text-decoration: none;
+}
+
 button {
     display: inline-flex;
     align-items: center;
@@ -12,6 +18,15 @@ button {
 
 .cart-item {
     background-color: #eeeeee;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
     padding: 16px;
     margin: 2px 0;
+
+    width: 100%;
+    min-width: 400px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
