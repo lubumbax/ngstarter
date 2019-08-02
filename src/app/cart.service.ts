@@ -25,4 +25,9 @@ export class CartService {
   getShippingPrices() {
     return this.http.get('/assets/data/shipping_costs.json');
   }
+
+  placeOrder(data:{}) {
+    this.clearCart();
+    console.info('Your order has been submitted. Data:', data["name"], data["address"]);
+  }
 }
